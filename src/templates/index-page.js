@@ -9,12 +9,9 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 export const IndexPageTemplate = ({
   image,
   title,
-  heading,
-  description,
-  
   main,
 
-  fullImage,
+ 
 }) => (
   <div className="content">
    <h1
@@ -34,8 +31,7 @@ export const IndexPageTemplate = ({
         <div className="section">
           <div className="columns">
             <div className="column is-7 is-offset-1">
-              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-              <p>{description}</p>
+       
             </div>
           </div>
           <div className="columns">
@@ -71,22 +67,12 @@ export const IndexPageTemplate = ({
                 </div>
               </div>
              
-              <div
-                className="full-width-image-container"
-                style={{
-                  backgroundImage: `url(${
-                    fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
-                      : fullImage
-                  })`,
-                }}
-              />
+       
               <h2 className="has-text-weight-semibold is-size-2">
                 
               </h2>
-              <p className="is-size-5">{pricing.description}</p>
-          
-            </div>
+             
+      
           </div>
         </div>
       </div>
@@ -97,8 +83,8 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  description: PropTypes.string,
+  
+
  
   main: PropTypes.shape({
     heading: PropTypes.string,
@@ -108,8 +94,7 @@ IndexPageTemplate.propTypes = {
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
   
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-
+ 
 }
 
 const IndexPage = ({ data }) => {
@@ -120,12 +105,11 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        description={frontmatter.description}
+     
+       
         
         main={frontmatter.main}
-      
-        fullImage={frontmatter.full_image}
+   
       />
     </Layout>
   )
@@ -153,8 +137,8 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
-        description
+        
+     
 
         main {
           heading
@@ -187,14 +171,6 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid
                 }
               }
-            }
-          }
-        }
-
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
             }
           }
         }
