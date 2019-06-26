@@ -13,7 +13,8 @@ export const IndexPageTemplate = ({
 
  
 }) => (
-
+    <section>
+<div>
           {title}
        
                     {main.heading}
@@ -24,7 +25,8 @@ export const IndexPageTemplate = ({
                         <PreviewCompatibleImage imageInfo={main.image2} />
               
        
-           
+  </div> 
+    </section>
 )
 
 IndexPageTemplate.propTypes = {
