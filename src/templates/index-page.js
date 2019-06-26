@@ -9,6 +9,7 @@ import BlogRoll from '../components/BlogRoll'
 export const IndexPageTemplate = ({
   title,
   heading,
+    main,
   mainpitch,
   description,
   intro,
@@ -91,17 +92,11 @@ export const pageQuery = graphql`
       frontmatter {
         title
         heading
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            text
-          }
+       main {
           heading
           description
+}
+    
         }
       }
     }
