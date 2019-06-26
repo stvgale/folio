@@ -13,7 +13,7 @@ export const IndexPageTemplate = ({
 
  
 }) => (
-  <div className="content">
+
    <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen home-title"
           style={{
@@ -26,58 +26,22 @@ export const IndexPageTemplate = ({
         >
           {title}
         </h1>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-7 is-offset-1">
-       
-            </div>
-          </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-             
-              <div className="columns">
-                <div className="column is-7">
+
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h3>
                   <p>{main.description}</p>
-                </div>
-              </div>
-              <div className="tile is-ancestor">
-                <div className="tile is-vertical">
-                  <div className="tile">
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
+           
                         <PreviewCompatibleImage imageInfo={main.image1} />
-                      </article>
-                    </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
+                     
                         <PreviewCompatibleImage imageInfo={main.image2} />
-                      </article>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
-                      <PreviewCompatibleImage imageInfo={main.image3} />
-                    </article>
-                  </div>
-                </div>
-              </div>
-             
+              
        
               <h2 className="has-text-weight-semibold is-size-2">
                 
               </h2>
-             
-      
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+       
+
 )
 
 IndexPageTemplate.propTypes = {
@@ -91,7 +55,7 @@ IndexPageTemplate.propTypes = {
     description: PropTypes.string,
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+   
   }),
   
  
@@ -163,16 +127,7 @@ export const pageQuery = graphql`
               }
             }
           }
-          image3 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 1075, quality: 72) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
+
         }
 
       }
