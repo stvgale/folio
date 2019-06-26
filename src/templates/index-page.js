@@ -8,7 +8,8 @@ import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
   title,
-  intro,
+  heading,
+  description,
 }) => (
   <div>
         <h1
@@ -29,15 +30,15 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-             
-                <Features gridItems={intro.blurbs} />
                 <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
+                  <div className="column is-12">
+                    <h3 className="has-text-weight-semibold is-size-2">
+                      {heading}
+                    </h3>
+                    <p>{description}</p>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -49,9 +50,8 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+  heading: PropTypes.string,
+  description: PropTypes.string,
 }
 
 const IndexPage = ({ data }) => {
@@ -61,7 +61,8 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         title={frontmatter.title}
-        intro={frontmatter.intro}
+        heading={frontmatter.heading}
+        description={frontmatter.description}
       />
     </Layout>
   )
@@ -82,11 +83,8 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        intro {
-          blurbs {
-            text
-          }
-        }
+        heading
+        description
       }
     }
   }
