@@ -14,27 +14,21 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-      <div
-        style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'center',
-          flexDirection: 'column',
-        }}
-      >
+
         <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen home-title"
           style={{
-            lineHeight: '1',
-            padding: '0.25em',
+        font-size: '3rem',
+    max-width: '750px',
+    margin: '0 auto',
+    line-height: '4.7rem',
+    color: '#000',
+    font-weight: '900'
           }}
         >
           {title}
         </h1>
 
-    </div>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
