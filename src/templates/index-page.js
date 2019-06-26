@@ -28,19 +28,17 @@ export const IndexPageTemplate = ({
           {title}
         </h1>
 
-                  <h3 className="has-text-weight-semibold is-size-3">
+    <div className="about">
+                  <h2 className="has-text-weight-semibold is-size-3">
                     {main.heading}
-                  </h3>
-                  <p>{main.description}</p>
+                  </h2>
+                  <h3>{main.description}</h3>
            
                         <PreviewCompatibleImage imageInfo={main.image1} />
                      
                         <PreviewCompatibleImage imageInfo={main.image2} />
               
-       
-              <h2 className="has-text-weight-semibold is-size-2">
-                
-              </h2>
+       </div>
        
 </div>
     </section>
