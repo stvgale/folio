@@ -20,7 +20,7 @@ export const IndexPageTemplate = ({
           style={{
             lineHeight: '1',
             padding: '4.7rem',
-    font-size: '3rem',
+    fontSize: '3rem',
           }}
         >
           {title}
