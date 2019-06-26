@@ -13,19 +13,36 @@ export const IndexPageTemplate = ({
 
  
 }) => (
-    <section>
+   <section>
 <div>
+   <h1
+          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen home-title"
+          style={{
+            lineHeight: '1',
+            padding: '4.7rem',
+            fontSize: '3rem',
+            textAlign: 'center',
+            fontWeight: '900'
+          }}
+        >
           {title}
-       
+        </h1>
+
+                  <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
-                 {main.description}
+                  </h3>
+                  <p>{main.description}</p>
            
                         <PreviewCompatibleImage imageInfo={main.image1} />
                      
                         <PreviewCompatibleImage imageInfo={main.image2} />
               
        
-  </div> 
+              <h2 className="has-text-weight-semibold is-size-2">
+                
+              </h2>
+       
+</div>
     </section>
 )
 
