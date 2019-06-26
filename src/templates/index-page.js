@@ -8,6 +8,7 @@ import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
   title,
+    main,
 }) => (
   <div>
         <h1
@@ -33,7 +34,19 @@ export const IndexPageTemplate = ({
                    
                   </div>
                   <div className="tile">
-                   
+                   <h3 className="has-text-weight-semibold is-size-3">
+                    {main.heading}
+                  </h3>
+                  <p>{main.description}</p>
+    <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main.image1} />
+                      </article>
+    <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main.image2} />
+                      </article>
+    <article className="tile is-child">
+                        <PreviewCompatibleImage imageInfo={main.image3} />
+                      </article>
                   </div>
                 </div>
                 <div className="columns">
@@ -64,6 +77,13 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
+      main: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  }),
 
 }
 
@@ -74,7 +94,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         title={frontmatter.title}
-       
+       main={frontmatter.main}
        
       />
     </Layout>
@@ -96,10 +116,41 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        
-
-
       }
+main {
+          heading
+          description
+          image1 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image2 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 526, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image3 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1075, quality: 72) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
     }
   }
 `
