@@ -8,10 +8,6 @@ import BlogRoll from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
   title,
-  heading,
-  mainpitch,
-  description,
-  intro,
 }) => (
   <div>
         <h1
@@ -34,18 +30,15 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <div className="content">
                   <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+                   
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                   
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
+                
                   </div>
                 </div>
                
@@ -71,12 +64,7 @@ export const IndexPageTemplate = ({
 
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
-  heading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
+
 }
 
 const IndexPage = ({ data }) => {
@@ -86,10 +74,8 @@ const IndexPage = ({ data }) => {
     <Layout>
       <IndexPageTemplate
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+       
+       
       />
     </Layout>
   )
@@ -110,19 +96,9 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        heading
-        mainpitch {
-          title
-          description
-        }
-        description
-        intro {
-          blurbs {
-            text
-          }
-          heading
-          description
-        }
+        
+
+
       }
     }
   }
