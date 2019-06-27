@@ -8,7 +8,6 @@ import Plx from 'react-plx';
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const IndexPageTemplate = ({
-  image,
   title,
   main,
 
