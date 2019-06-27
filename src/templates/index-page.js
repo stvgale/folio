@@ -32,10 +32,10 @@ export const IndexPageTemplate = ({
                   <h2 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h2>
-                  <h3>{main.description}</h3>
-                        <div className="one">
+    <div className="one">
                         <PreviewCompatibleImage imageInfo={main.image1} />
                      </div>
+                  <h3>{main.description}</h3>
                     <div className="two">
                         <PreviewCompatibleImage imageInfo={main.image2} />
     </div>
