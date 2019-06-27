@@ -24,7 +24,8 @@ export const IndexPageTemplate = ({
             fontSize: '3rem',
             textAlign: 'center',
             fontWeight: '900',
-            maxWidth: '750px'
+            maxWidth: '750px',
+            lineHeight: '4.7rem'
           }}
         >
           {title}
@@ -51,7 +52,7 @@ export const IndexPageTemplate = ({
         },
        {
           startValue: 1,
-          endValue: 0,
+          endValue: 1,
           property: 'opacity',
         }
       ],
