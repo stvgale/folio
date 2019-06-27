@@ -9,7 +9,7 @@ export default class BlogIndexPage extends React.Component {
       <Layout>
         <div
         >
-          <h1
+          <h1 className="pinktitle"
           >
             Recent:
           </h1>
