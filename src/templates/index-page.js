@@ -33,9 +33,35 @@ export const IndexPageTemplate = ({
                   <h2 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h2>
+    <Plx
+  className='about-first-image'
+  animateWhenNotInViewport={ true }
+  parallaxData={ [
+{
+      start: 0,
+      duration: 850,
+      name: 'second',
+      properties: [
+        {
+          startValue: -220,
+          endValue: 0,
+          unit: 'px',
+          property: 'translateY',
+        },
+       {
+          startValue: 1,
+          endValue: 1,
+          property: 'opacity',
+        }
+      ],
+    },
+
+  ] }
+>      
     <div className="one">
                         <PreviewCompatibleImage imageInfo={main.image1} />
                      </div>
+    </Plx>
                   <h3>{main.description}</h3>
                     <div className="two">
                         <PreviewCompatibleImage imageInfo={main.image2} />
