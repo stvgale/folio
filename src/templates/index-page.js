@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Plx from 'react-plx';
 
 
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
