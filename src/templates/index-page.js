@@ -41,12 +41,12 @@ export const IndexPageTemplate = ({
   parallaxData={ [
 {
       start: 0,
-      duration: 850,
+      duration: 1050,
       name: 'second',
       properties: [
         {
           startValue: -220,
-          endValue: 0,
+          endValue: -50,
           unit: 'px',
           property: 'translateY',
         },
