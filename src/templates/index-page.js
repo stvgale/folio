@@ -23,7 +23,9 @@ export const IndexPageTemplate = ({
             padding: '4.7rem',
             fontSize: '3rem',
             textAlign: 'center',
-            fontWeight: '900'
+            fontWeight: '900',
+            maxWidth: '750px'
+            margin: '120px auto 0 auto'
           }}
         >
           {title}
