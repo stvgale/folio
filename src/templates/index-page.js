@@ -33,10 +33,10 @@ export const IndexPageTemplate = ({
                     {main.heading}
                   </h2>
                   <h3>{main.description}</h3>
-                        <div> className="one">
+                        <div className="one">
                         <PreviewCompatibleImage imageInfo={main.image1} />
                      </div>
-    <div> className="two">
+                    <div className="two">
                         <PreviewCompatibleImage imageInfo={main.image2} />
     </div>
               
