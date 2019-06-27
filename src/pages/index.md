@@ -6,9 +6,9 @@ main:
   heading: Driven by Curiosity & Exploration
   image1:
     alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    image: /img/ash.3bc6f2c5.jpg
   image2:
     alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
+    image: /img/trees.91b9d1d0.jpg
 ---
 
