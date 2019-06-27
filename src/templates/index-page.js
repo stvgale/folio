@@ -51,7 +51,7 @@ export const IndexPageTemplate = ({
         },
        {
           startValue: 1,
-          endValue: 1,
+          endValue: 0,
           property: 'opacity',
         }
       ],
