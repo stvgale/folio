@@ -25,7 +25,6 @@ export const IndexPageTemplate = ({
             textAlign: 'center',
             fontWeight: '900',
             maxWidth: '750px'
-            margin: '120px auto 0 auto'
           }}
         >
           {title}
