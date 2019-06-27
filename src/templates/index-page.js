@@ -63,9 +63,36 @@ export const IndexPageTemplate = ({
                      </div>
     </Plx>
                   <h3>{main.description}</h3>
+     <Plx
+  className='about-last-image'
+  animateWhenNotInViewport={ true }
+  parallaxData={ [
+{
+      start: 200,
+      duration: 1150,
+    
+      name: 'second',
+      properties: [
+        {
+          startValue: 0,
+          endValue: -180,
+          unit: 'px',
+          property: 'translateY',
+        },
+       {
+          startValue: 0,
+          endValue: 1,
+          property: 'opacity',
+        }
+      ],
+    },
+
+  ] }
+>     
                     <div className="two">
                         <PreviewCompatibleImage imageInfo={main.image2} />
     </div>
+    </Plx>
               
        </div>
        
