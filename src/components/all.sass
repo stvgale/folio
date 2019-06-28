@@ -61,12 +61,14 @@ table
     right: 43px
     z-index: 9999
     a
-        background: pink
+        background: yellow
         float: left
         font-size: 16px
         padding: 10px 15px
         color: #000000
         text-decoration: none
+    [aria-current] 
+        background-color: pink;
 
 .home-title
     margin: 120px auto 0 auto
@@ -114,8 +116,10 @@ table
         
 .blog
     max-width: 800px
-    margin: 0 auto 120px auto
+    margin: 0 auto
+    padding: 0 0 120px 0
     border-top: solid 3px #000000
+    display: inline-block
 .tile 
     float: left
     width: 100%
@@ -123,7 +127,7 @@ table
 .pinktitle
     margin: 140px auto 85px
     text-align: center
-    font-size: 2rem
+    font-size: 3rem
     font-weight: 900
     color: #e7899a
     width: 100%
@@ -132,8 +136,10 @@ table
 .featured-thumbnail
     height: auto
     width: 320px
-    box-shadow: 17px 17px #e7899a
-
+    box-shadow: 17px 17px rgba(231, 137, 154, 0.9)
+.container 
+    margin: 0 auto
+    width: 800px
 .column
     float: left
     width: 100%
@@ -178,3 +184,8 @@ table
 
 .tippy-tooltip.tomato-theme .tippy-backdrop 
   background-color: tomato
+
+.main 
+    width: 100vw
+    overflow: hidden
+    display: inline-block
