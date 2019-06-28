@@ -18,8 +18,9 @@ export const BlogPostTemplate = ({
 
   return (
     <section className="section">
+      <svg className="blogarrow" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="39.002px" height="26.005px" viewBox="286.5 382.498 39.002 26.005" enable-background="new 286.5 382.498 39.002 26.005" title="Next"><g><polygon fill="#e7899a" points="325.041,396.329 325.502,395.861 325.046,395.398 325.432,395.008 325.041,394.612 325.041,394.533 324.963,394.533 313.102,382.498 311.805,383.814 322.367,394.533 286.5,394.533 286.5,396.395 322.354,396.395 311.732,407.172 313.044,408.503 324.977,396.395 325.041,396.395 	"></polygon></g></svg>
       {helmet || ''}
-      <div className="container content work-detail">
+      <div className="work-detail">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="blogtitle">
@@ -27,18 +28,6 @@ export const BlogPostTemplate = ({
             </h1>
             <h2>{description}</h2>
             <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
           </div>
         </div>
       </div>
