@@ -11,3 +11,7 @@ featuredimage: /img/wire.jpg
 
 ![accounting app wireframe](/img/accounting1.png)![accounting app wireframe](/img/accounting2.png)
 </div>
+<div style="padding:120px 0;text-align:center;">
+<h4>Next Project</h4>
+<a href="/blog/2019-06-26-ikka">ikka</a>
+</div>
