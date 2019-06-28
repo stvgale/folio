@@ -66,7 +66,7 @@ table
         font-size: 16px
         padding: 10px 15px
         color: #000000
-        text-decoration: none;
+        text-decoration: none
 
 .home-title
     margin: 120px auto 0 auto
@@ -113,11 +113,15 @@ table
         height: 500px
         
 .blog
-    max-width: 1300px
+    max-width: 800px
     margin: 0 auto
-
+    border-top: solid 3px #000000
+.tile 
+    float: left
+    width: 100%
+    
 .pinktitle
-    margin: 180px auto 35px auto
+    margin: 140px auto 85px
     text-align: center
     font-size: 2rem
     font-weight: 900
@@ -125,17 +129,52 @@ table
     width: 100%
     max-width: 900px
     
+.featured-thumbnail
+    height: 220px
+    width: 220px
+    box-shadow: 17px 17px pink
+
 .column
     float: left
-    width: 33.333333%
+    width: 100%
     a
         text-decoration: none
         position: relative
-    h3
-        font-size: 2.75rem
-        color: #ffffff
-        font-weight: 900
-        position: absolute
-        bottom: 10px
-        left: 10px
-        
+        color: #000000
+        padding: 40px 0
+        border-bottom: solid 3px #000000
+        float: left
+        width: 100%
+        max-width: 800px
+        h3
+            font-size: 2.75rem
+            margin-left: 30px
+            font-weight: 900
+            line-height: 120px
+
+        .arrow
+            margin-left: 30px 
+            opacity: 0
+ 
+        &:hover 
+            background: yellow
+            .arrow
+                opacity: 1
+    
+    
+    
+.tippy-tooltip.tomato-theme 
+  background-color: tomato
+  color: yellow
+  padding: 0
+  border-radius: 0
+  margin-top: -85px
+  margin-left: 340px
+  box-shadow: 17px 17px pink
+
+.tippy-tooltip.tomato-theme[data-animatefill] 
+  background-color: transparent
+
+
+.tippy-tooltip.tomato-theme .tippy-backdrop 
+  background-color: tomato
