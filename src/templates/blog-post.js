@@ -19,13 +19,13 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ''}
-      <div className="container content">
+      <div className="container content work-detail">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="pinktitle">
+            <h1 className="blogtitle">
               {title}
             </h1>
-            <p>{description}</p>
+            <h2>{description}</h2>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
