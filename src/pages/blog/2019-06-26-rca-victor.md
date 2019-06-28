@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: RCA Victor
 date: 2019-06-28T04:08:58.143Z
-description: 'Design, Development & Hardware stuff'
+description: Modern Restoration of a beautiful classic
 featuredpost: false
 featuredimage: /img/rca.jpg
 ---
