@@ -13,5 +13,5 @@ featuredimage: /img/wire.jpg
 </div>
 <div style="padding:120px 0;text-align:center;">
 <h4>Next Project</h4>
-<a href="/blog/2019-06-26-ikka">ikka</a>
+<a href="/blog/2019-06-26-rca-victor">RCA Victor</a>
 </div>
