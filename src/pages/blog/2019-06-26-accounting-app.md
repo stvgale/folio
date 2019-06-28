@@ -4,6 +4,6 @@ title: Accounting App
 date: 2019-06-27T04:07:00.197Z
 description: appp
 featuredpost: false
-featuredimage: /img/1.png
+featuredimage: /img/wire.jpg
 ---
 asdsd
