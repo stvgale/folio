@@ -22,7 +22,7 @@ export const BlogPostTemplate = ({
       {helmet || ''}
       <div className="work-detail">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div>
             <h1 className="blogtitle">
               {title}
             </h1>
