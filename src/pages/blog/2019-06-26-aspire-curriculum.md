@@ -11,5 +11,5 @@ featuredimage: /img/aspire.jpg
 </div>
 <div style="padding:120px 0;text-align:center;">
 <h4>Next Project</h4>
-<a href="/blog/2019-06-26-aspire-curriculum">Aspire Curriculum</a>
+<a href="/blog/2019-06-26-accounting-app">Accounting App</a>
 </div>
