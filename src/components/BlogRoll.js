@@ -29,7 +29,7 @@ class BlogRoll extends React.Component {
 
                
                       <h2>{post.frontmatter.title}</h2>
-                      <h2>{post.frontmatter.tags}</h2>
+                      <h3>{post.frontmatter.tags}</h3>
     
                   
         
