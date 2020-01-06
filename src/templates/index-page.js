@@ -98,6 +98,7 @@ export const IndexPageTemplate = ({
        </div>
        
 </div>
+    <h1 className="email">Connect with me on <a href="https://www.linkedin.com/in/galesteve/" target="_blank">Linkedin</a></h1>
     </section>
 )
 
