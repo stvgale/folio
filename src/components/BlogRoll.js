@@ -29,6 +29,7 @@ class BlogRoll extends React.Component {
 
                
                       <h2>{post.frontmatter.title}</h2>
+                      <h2>{post.frontmatter.tags}</h2>
     
                   
         
@@ -68,6 +69,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
+                tags
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {
