@@ -8,8 +8,8 @@ featuredimage: /img/graph4.jpg
 tags:
   - UI/ UX
 ---
-<span>I was tasked with working along side the product managers, developers, and business managers to create UXfor an analytics platform that used machine learning to create alerts.</span><div style="text-align:center;display: inline-block">
-![ai](/img/ascreen.png)![ai](/img/bscreen.png)
+<span>I was tasked with working along side the product managers, developers, and business managers to create UXfor an analytics platform that used machine learning to create alerts.</span><div style="text-align:center;display: inline-block"> ![ai](/img/ascreen.png)![ai](/img/bscreen.png)
+
 </div>
 <div style="padding:120px 0;text-align:center;">
 <h4>Next Project</h4>
