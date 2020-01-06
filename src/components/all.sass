@@ -143,40 +143,13 @@ table
     color: #000000
     width: 100%
     max-width: 900px
-    
-.featured-thumbnail
-    height: auto
-    width: 320px
-    box-shadow: 17px 17px rgba(231, 137, 154, 0.9)
 .container 
     margin: 0 auto
     width: 800px
 .column
     float: left
     width: 100%
-    a
-        text-decoration: none
-        position: relative
-        color: #000000
-        padding: 20px 0
-        border-bottom: solid 3px #000000
-        float: left
-        width: 100%
-        max-width: 800px
-        h3
-            font-size: 2.75rem
-            margin-left: 30px
-            font-weight: 900
-            line-height: 120px
-
-        .arrow
-            margin-left: 30px 
-            opacity: 0
- 
-        &:hover 
-            background: yellow
-            .arrow
-                opacity: 1
+   
     
     
 [aria-hidden="true"] 
@@ -184,21 +157,6 @@ table
     top: 0
     left: 0
     
-.tippy-tooltip.tomato-theme 
-  background-color: tomato
-  color: yellow
-  padding: 0
-  border-radius: 0
-  margin-top: -85px
-  margin-left: 340px
-  box-shadow: 17px 17px pink
-
-.tippy-tooltip.tomato-theme[data-animatefill] 
-  background-color: transparent
-
-
-.tippy-tooltip.tomato-theme .tippy-backdrop 
-  background-color: tomato
 
 .main 
     width: 100vw
@@ -227,7 +185,7 @@ table
             margin-top: 85px
             float: right
             width: 480px
-            font-size: 23px
+            font-size: 18px
             font-weight: 600
             line-height: 1.6
             margin-right: 150px 
@@ -244,3 +202,26 @@ table
         color: #000;
         &:hover
             color: yellow
+        
+        
+        
+.blog-item
+    float: left;
+    width: 40%;
+    text-decoration: none;
+    padding: 0 0 350px 0;
+    &:nth-child(even)
+       float: right;
+
+    &:nth-child(odd)
+        float: left;
+    &:nth-child(2)
+        padding-top: 200px;
+    h2
+        color: #000000;
+        font-size: 1.8em;
+        margin-top: 40px;
+        display: inline-block;
+    .featured-thumbnail
+        width: 100%;
+        float: left;
