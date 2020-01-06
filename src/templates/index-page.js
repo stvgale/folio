@@ -17,15 +17,6 @@ export const IndexPageTemplate = ({
 <div>
    <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen home-title"
-          style={{
-            lineHeight: '1',
-            padding: '4.7rem',
-            fontSize: '3rem',
-            textAlign: 'center',
-            fontWeight: '900',
-            maxWidth: '750px',
-            lineHeight: '4.7rem'
-          }}
         >
           {title}
         </h1>

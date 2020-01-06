@@ -1,3 +1,4 @@
+$lg: 1441px;
 @import url('https://fonts.googleapis.com/css?family=Muli:400,600,900')
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -31,6 +32,7 @@ body
   background: #f7faf8
   color: #202121
 
+    
 ol, ul
   list-style: none
 
@@ -59,7 +61,6 @@ table
     position: fixed
     top: 33px
     right: 43px
-    z-index: 9999
     a
         background: yellow
         float: left
@@ -67,6 +68,8 @@ table
         padding: 10px 15px
         color: #000000
         text-decoration: none
+        @media (min-width: $lg) 
+            font-size: 1.2em
         &:hover
             background: pink
     [aria-current] 
@@ -74,6 +77,16 @@ table
 
 .home-title
     margin: 120px auto 0 auto
+    font-size: 3rem
+    line-height: 1
+    padding: 4.4rem
+    text-align: center
+    font-weight: 900
+    max-width: 750px
+    line-height: 4.7rem
+    @media (min-width: $lg) 
+        font-size: 3.5rem
+        padding: 5rem
         
 .about 
     width: 100%
@@ -143,9 +156,12 @@ table
     color: #000000
     width: 100%
     max-width: 900px
+    
 .container 
     margin: 0 auto
     width: 900px
+    @media (min-width: $lg) 
+        width: 1200px
 .column
     float: left
     width: 100%
@@ -211,13 +227,19 @@ table
     width: 385px;
     text-decoration: none;
     padding: 0 0 350px 0;
+    @media (min-width: $lg)
+        width: 485px;
     &:nth-child(even)
        float: right;
        margin-left: calc(50% - 385px);
+       @media (min-width: $lg) 
+            margin-left: calc(50% - 485px);
 
     &:nth-child(odd)
         float: left;
         margin-right: calc(50% - 385px);
+        @media (min-width: $lg) 
+            margin-right: calc(50% - 485px);
     &:nth-child(2)
         padding-top: 200px;
     h2
